@@ -19,3 +19,4 @@ C:\Users\nguye\source\repos\EnandDe\EnandDe\obj\Debug\net5.0-windows\EnandDe.dll
 C:\Users\nguye\source\repos\EnandDe\EnandDe\obj\Debug\net5.0-windows\ref\EnandDe.dll
 C:\Users\nguye\source\repos\EnandDe\EnandDe\obj\Debug\net5.0-windows\EnandDe.pdb
 C:\Users\nguye\source\repos\EnandDe\EnandDe\obj\Debug\net5.0-windows\EnandDe.genruntimeconfig.cache
+C:\Users\nguye\source\repos\EnandDe\EnandDe\obj\Debug\net5.0-windows\EnandDe.ManualMode.resources

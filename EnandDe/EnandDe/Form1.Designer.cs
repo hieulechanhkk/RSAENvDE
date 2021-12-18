@@ -50,6 +50,7 @@ namespace EnandDe
             this.export_ciphertext = new System.Windows.Forms.Button();
             this.export_result = new System.Windows.Forms.Button();
             this.btn_generatekey = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_Encrypt
@@ -85,7 +86,7 @@ namespace EnandDe
             // btn_PublicKey
             // 
             this.btn_PublicKey.Location = new System.Drawing.Point(413, 297);
-            this.btn_PublicKey.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_PublicKey.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_PublicKey.Name = "btn_PublicKey";
             this.btn_PublicKey.Size = new System.Drawing.Size(78, 20);
             this.btn_PublicKey.TabIndex = 3;
@@ -96,7 +97,7 @@ namespace EnandDe
             // btn_fileplaintext
             // 
             this.btn_fileplaintext.Location = new System.Drawing.Point(411, 107);
-            this.btn_fileplaintext.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_fileplaintext.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_fileplaintext.Name = "btn_fileplaintext";
             this.btn_fileplaintext.Size = new System.Drawing.Size(122, 20);
             this.btn_fileplaintext.TabIndex = 4;
@@ -146,6 +147,7 @@ namespace EnandDe
             this.tb_Cipher.Name = "tb_Cipher";
             this.tb_Cipher.Size = new System.Drawing.Size(376, 168);
             this.tb_Cipher.TabIndex = 9;
+            this.tb_Cipher.TextChanged += new System.EventHandler(this.tb_Cipher_TextChanged);
             // 
             // label4
             // 
@@ -193,7 +195,7 @@ namespace EnandDe
             // btn_Ciphertext
             // 
             this.btn_Ciphertext.Location = new System.Drawing.Point(958, 107);
-            this.btn_Ciphertext.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Ciphertext.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_Ciphertext.Name = "btn_Ciphertext";
             this.btn_Ciphertext.Size = new System.Drawing.Size(122, 20);
             this.btn_Ciphertext.TabIndex = 15;
@@ -204,7 +206,7 @@ namespace EnandDe
             // btn_Privatekey
             // 
             this.btn_Privatekey.Location = new System.Drawing.Point(958, 297);
-            this.btn_Privatekey.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Privatekey.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_Privatekey.Name = "btn_Privatekey";
             this.btn_Privatekey.Size = new System.Drawing.Size(78, 20);
             this.btn_Privatekey.TabIndex = 16;
@@ -248,7 +250,7 @@ namespace EnandDe
             // btn_generatekey
             // 
             this.btn_generatekey.Location = new System.Drawing.Point(30, 22);
-            this.btn_generatekey.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_generatekey.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_generatekey.Name = "btn_generatekey";
             this.btn_generatekey.Size = new System.Drawing.Size(129, 24);
             this.btn_generatekey.TabIndex = 20;
@@ -256,11 +258,23 @@ namespace EnandDe
             this.btn_generatekey.UseVisualStyleBackColor = true;
             this.btn_generatekey.Click += new System.EventHandler(this.btn_generatekey_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(958, 9);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(130, 34);
+            this.button1.TabIndex = 21;
+            this.button1.Text = "Manual Mode";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_2);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1098, 537);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_generatekey);
             this.Controls.Add(this.export_result);
             this.Controls.Add(this.export_ciphertext);
@@ -314,6 +328,7 @@ namespace EnandDe
         private System.Windows.Forms.Button export_ciphertext;
         private System.Windows.Forms.Button export_result;
         private System.Windows.Forms.Button btn_generatekey;
+        private System.Windows.Forms.Button button1;
     }
 }
 

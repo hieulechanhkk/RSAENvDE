@@ -54,6 +54,11 @@ namespace EnandDe
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+            if (tb_plaintext.Text == string.Empty)
+            {
+                tb_Ciphertext.Text = "";
+                tb_publickey.Text = "";
+            }
 
         }
 
@@ -155,6 +160,22 @@ namespace EnandDe
             else
             {
                 DialogResult rs3 = MessageBox.Show("Create your file to write!!!!", "Notification", MessageBoxButtons.OK);
+            }
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            ManualMode manual = new ManualMode();
+            manual.Show();
+            this.Hide();
+        }
+
+        private void tb_Cipher_TextChanged(object sender, EventArgs e)
+        {
+            if(tb_Cipher.Text=="")
+            {
+                tb_privatekey.Text = "";
+                tb_result.Text = "";
             }
         }
     }
